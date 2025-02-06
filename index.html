@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Valentine's Day❤️🙃</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="card">
+		<div class="imgBox">
+			<div class="bark"></div>
+			<img src="images/last.jpg">
+		</div>
+		<div class="details">
+			<h4 class="color1">You're the prettiest girl ever!</h2>
+			<h4 class="color2 margin">(HAPPY Valentine's Day)</h3>
+			<p>Ayaatii,</p>
+			<p>Let's see.. .</p>
+			<p>You’re always with me,</p>
+			<p>And I want you constantly.</p>
+			<p>Your presence makes me happy,</p>
+			<p>I want you for eternity.</p>
+			<p>Will you be my be3ouida🙃?</p>
+			<p>Cause your hug makes me shine 😊</p>
+			<p class="text-right">Happy Valentines Day, Babe!</p>
+			<p class="text-right">🥰Mossaab</p>
+		</div>
+	</div>
+
+    <div class="boton">
+        <div>OPEN 🤭</div>
+    </div>
+
+
+    <script>
+        let card = document.querySelector('.card');
+        let bark = document.querySelector('.bark');
+        let imgBox = document.querySelector('.imgBox');
+
+        let boton = document.querySelector('.boton');
+
+        let isOpen = false;
+
+        boton.addEventListener("click", function(){
+
+            if(!isOpen){
+                card.style.transform ="translate(-50%,-50%) perspective(2000px) rotate(15deg) scale(1.2)";
+                card.style.boxShadow =" inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5)";
+                
+
+                imgBox.style.transform= "rotateY(-135deg)";
+
+                bark.style.opacity= "1";
+                bark.style.transition = "0.6s";
+                bark.style.boxShadow= "300px 200px 100px rgba(0, 0, 0, .4) inset";
+
+                boton.style.bottom ="2vh";
+                boton.innerHTML="CLOSE 🫠";
+
+                isOpen = true;
+
+            }else{
+                card.style.transform ="";
+                card.style.boxShadow ="";
+                card.style.boxShadow ="";
+                card.style.boxShadow ="";
+                card.style.boxShadow ="";
+                
+
+                imgBox.style.transform= "";
+
+                bark.style.opacity= "";
+                bark.style.transition = "";
+                bark.style.boxShadow= "";
+
+                boton.style.bottom ="";
+                boton.innerHTML="OPEN 🤭";
+
+                isOpen = false;
+            }
+            
+        })
+
+        
+    </script>
+
+</body>
+</html>

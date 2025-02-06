@@ -136,7 +136,7 @@ h4 {
     .boton {
     position: absolute;
     font-size: 18px;
-    bottom: 14vh;
+    bottom: 24vh;
     cursor: pointer;
     background-color: rgb(253, 107, 107);
     width: 90px;
